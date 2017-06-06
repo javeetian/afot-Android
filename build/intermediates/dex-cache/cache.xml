@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/YoumiSdk_v7.5.0_2017-06-02/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6d52eb2dcccddf1a645e76665a765c4dd465336d">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/intermediates-exploded-aar-YoumiSdk_v7.5.0_2017-06-02_a04b92c8be69f00679c6e3e1c1030e3bd42f1aad/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.0_99ad5718868123233a9169ca123d65bba9f9722e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f2e3b9bc1ec25f652e8007ce7774c991e38f6a00">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_b5cd97a89c5f3f33887cc585a6de5fbc7783ce88/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0c6d948e6cb9ea6f535d175fb61ba2930719c0e9">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.0_f57995066aee7f2e591bdd30c48001649f63e87a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.0_7c2fb83c3e42a20bfe83e872fc56bc64b8f715ea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.0/support-annotations-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a22d2cc94da87b254451fa8ed28afc30b4653773">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.0_9d656d59c82f8b2fcb098f6805b417441bb37661/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/com.android.support/design/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="26384be22ddc74cfe197ebda9edbc7d1fd8bd537">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.0.0_d2ff3ca12b582b3e0d2d1bb1037529c80d4750c6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3b61a70884adaf0be3fc06c70c801e3e6df13133">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_110287961390e07d962797073b754fdd53c494a7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="665d21a8a069c96b4d9e8b434f5096d865b4e261">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_f2a1a8df4691401f18ab19de0c0c0d9425b7a0b3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a2863b2467bd42016e2f030103b981aa1536a768">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_048d308af39d55fb920228de673eb22a7c885037/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ee5faf4dee5b6a4364bf51587871047dde7c703a">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_0805a020870a5a53adb864c22f19c3720302eb63/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="76fb65a4b41ea42dab8a1310ed772a2420c96b52">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.0_1f8da98c38b239456d3bcce492f0b7f0f35b8d17/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.0_8415623837f08ee52b651047acd48bec86a021e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="07daa0b6e1d455c82a38422ffe287c18823d339a">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.0_22f62c38772e1acbc4c1f9067b83573f9eed6da9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="22d4ceac4b5a0c46ec427493c05a73324f5a3c10">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f3bb550e194984c204ee9afbbc261aa676f8c514/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5e497d60f0cb6ce87c458ac5420a46d0fed49bd0">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.0_43b4b402af4d9204515a03da956924978fdff8a4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/libs/internal_impl-25.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.0_0943e674ae6efc818b830befb92f7b08c51bc183/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4ccbcda5c72027c7f7c14be9ff8640d9cb0d8da0">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.0_80ab733ab99b49dd478914a6b7c78df949ca3cf1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="26674000177e45447a0326a6ad84612761199a13">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.0_2f023abafb9d6db298a94e65c70d6e9282cc7443/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="75b1f366ff0bbc78f8b1f7cf0dc82e7c53afef6a">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.0_38fa11912bf1a8ab6b892abdb60d2a6949653ef3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
+        <dex dex="/Users/tianjianwei20/AndroidStudioProjects/AFriendOfTime/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.0_701571cbfc6ddbe76a00f79869eb8ce96d68ea5b/classes.dex" />
+    </item>
+
+</items>
