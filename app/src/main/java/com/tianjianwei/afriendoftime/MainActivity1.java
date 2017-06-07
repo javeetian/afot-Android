@@ -6,7 +6,6 @@
 
 package com.tianjianwei.afriendoftime;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -17,17 +16,12 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.FrameLayout;
 
 import net.youmi.android.AdManager;
-import net.youmi.android.nm.bn.BannerManager;
-import net.youmi.android.nm.bn.BannerViewListener;
 
 public class MainActivity1 extends AppCompatActivity {
     protected static final String TAG = "afot";
@@ -75,8 +69,6 @@ public class MainActivity1 extends AppCompatActivity {
         preloadData();
         // 检查广告配置
         //checkAdSettings();
-        //设置广告条
-        setupBannerAd();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -108,7 +100,7 @@ public class MainActivity1 extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            startActivity(new Intent(mContext, SpotAdActivity.class));
+            startActivity(new Intent(mContext, SupportUsActivity.class));
             return true;
         }
 
@@ -151,67 +143,6 @@ public class MainActivity1 extends AppCompatActivity {
         });
     }*/
 
-    /**
-     * 设置广告条广告
-     */
-    private void setupBannerAd() {
-        //		/**
-        //		 * 普通布局
-        //		 */
-        //		// 获取广告条
-        //		View bannerView = BannerManager.getInstance(mContext)
-        //				.getBannerView(mContext, new BannerViewListener() {
-        //					@Override
-        //					public void onRequestSuccess() {
-        //						logInfo("请求广告条成功");
-        //					}
-        //
-        //					@Override
-        //					public void onSwitchBanner() {
-        //						logDebug("广告条切换");
-        //					}
-        //
-        //					@Override
-        //					public void onRequestFailed() {
-        //						logError("请求广告条失败");
-        //					}
-        //				});
-        //		// 实例化广告条容器
-        //		LinearLayout bannerLayout = (LinearLayout) findViewById(R.id.ll_banner);
-        //		// 添加广告条到容器中
-        //		bannerLayout.addView(bannerView);
-
-        /**
-         * 悬浮布局
-         */
-        // 实例化LayoutParams
-        FrameLayout.LayoutParams layoutParams =
-                new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        // 设置广告条的悬浮位置，这里示例为右下角
-        layoutParams.gravity = Gravity.BOTTOM | Gravity.RIGHT;
-        // 获取广告条
-        final View bannerView = BannerManager.getInstance(mContext)
-                .getBannerView(mContext, new BannerViewListener() {
-
-                    @Override
-                    public void onRequestSuccess() {
-                        Log.d(TAG, "请求广告条成功");
-
-                    }
-
-                    @Override
-                    public void onSwitchBanner() {
-                        Log.d(TAG, "广告条切换");
-                    }
-
-                    @Override
-                    public void onRequestFailed() {
-                        Log.e(TAG, "请求广告条失败");
-                    }
-                });
-        // 添加广告条到窗口中
-        ((Activity) mContext).addContentView(bannerView, layoutParams);
-    }
     /**
      * 跑应用的逻辑
      */
