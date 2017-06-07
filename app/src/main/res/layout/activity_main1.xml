@@ -29,16 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginRight="@dimen/fab_margin"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_input_add" />
 
-    <LinearLayout
-        android:id="@+id/ll_main_banner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal"
-        >
-    </LinearLayout >
 </android.support.design.widget.CoordinatorLayout>
