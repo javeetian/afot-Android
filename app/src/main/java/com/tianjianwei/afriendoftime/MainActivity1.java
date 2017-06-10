@@ -10,18 +10,28 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
+import android.util.*;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.EditText;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
 import net.youmi.android.AdManager;
+
+import java.lang.reflect.Type;
+import java.util.HashMap;
 
 public class MainActivity1 extends AppCompatActivity {
     protected static final String TAG = "afot";
@@ -29,6 +39,8 @@ public class MainActivity1 extends AppCompatActivity {
     private static final String appId = "a7f13425d31f1790";
     private static final String appSecret = "b9d63075c70a73c7";
 
+    private HashMap<String, EventRecord> ers;
+    
     private Context mContext;
     private PermissionHelper mPermissionHelper;
     @Override
@@ -62,6 +74,20 @@ public class MainActivity1 extends AppCompatActivity {
             }
         }
 
+
+        SharedPreferences spf = PreferenceManager.getDefaultSharedPreferences(this);
+
+        Type type = new TypeToken<HashMap<String, EventRecord>>(){}.getType();
+        String json = spf.getString("eventDb", "");
+        ers = new Gson().fromJson(json, type);
+        if (ers == null) {
+            ers = new HashMap<String, EventRecord>();
+            EventRecord er = new EventRecord();
+            er.setConsumeTime(30);
+            er.setRecordTime(1);
+            er.setEvent("看书");
+            ers.put(String.valueOf(0), er);
+        }
 
         // 初始化视图
         //initView();
@@ -153,25 +179,30 @@ public class MainActivity1 extends AppCompatActivity {
         //setupSplashAd();
     }
     public void showAddView() {
+        LayoutInflater inflater = getLayoutInflater();
+
+        View layout = inflater.inflate(R.layout.dialog_add, null);
+
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
-        final EditText edittext = new EditText(this);
-        alert.setMessage("Enter Your Message");
-        alert.setTitle("Enter Your Title");
+        alert.setTitle("添加");
+        alert.setView(layout);
 
-        alert.setView(edittext);
-
-        alert.setPositiveButton("Yes Option", new DialogInterface.OnClickListener() {
+        final EditText edt_event = (EditText) layout.findViewById(R.id.edt_event);
+        alert.setPositiveButton("确认", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
                 //What ever you want to do with the value
                 //Editable YouEditTextValue = edittext.getText();
                 //OR
-                String YouEditTextValue = edittext.getText().toString();
+                String e = edt_event.getText().toString();
+                logUtils.logDebug("e: " + e);
+                dialog.dismiss();
             }
         });
 
-        alert.setNegativeButton("No Option", new DialogInterface.OnClickListener() {
+        alert.setNegativeButton("取消", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
                 // what ever you want to do with No option.
+                dialog.cancel();
             }
         });
 
