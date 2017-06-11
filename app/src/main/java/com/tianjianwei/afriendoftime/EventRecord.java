@@ -6,15 +6,15 @@ package com.tianjianwei.afriendoftime;
 
 public class EventRecord {
 
-    private int recordTime;
+    private long recordTime;
     private String event;
     private int consumeTime;  // minutes
 
-    public void setRecordTime(int i) {
+    public void setRecordTime(long i) {
         recordTime = i;
     }
 
-    public int getRecordTime() {
+    public long getRecordTime() {
         return recordTime;
     }
 

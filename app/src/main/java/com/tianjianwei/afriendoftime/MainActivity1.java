@@ -10,27 +10,21 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.*;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.EditText;
-
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+import android.widget.ListView;
 
 import net.youmi.android.AdManager;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 
 public class MainActivity1 extends AppCompatActivity {
@@ -40,9 +34,10 @@ public class MainActivity1 extends AppCompatActivity {
     private static final String appSecret = "b9d63075c70a73c7";
 
     private HashMap<String, EventRecord> ers;
-    
     private Context mContext;
     private PermissionHelper mPermissionHelper;
+    private ListView listView=null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,27 +69,16 @@ public class MainActivity1 extends AppCompatActivity {
             }
         }
 
-
-        SharedPreferences spf = PreferenceManager.getDefaultSharedPreferences(this);
-
-        Type type = new TypeToken<HashMap<String, EventRecord>>(){}.getType();
-        String json = spf.getString("eventDb", "");
-        ers = new Gson().fromJson(json, type);
-        if (ers == null) {
-            ers = new HashMap<String, EventRecord>();
-            EventRecord er = new EventRecord();
-            er.setConsumeTime(30);
-            er.setRecordTime(1);
-            er.setEvent("看书");
-            ers.put(String.valueOf(0), er);
-        }
-
         // 初始化视图
         //initView();
         // 预加载数据
         preloadData();
         // 检查广告配置
         //checkAdSettings();
+        AFOT  a = (AFOT)getApplicationContext();
+        a.loadData();
+        listView=(ListView)findViewById(R.id.lv_content);
+        listView.setAdapter(new MyAdapter(this, a.lers));
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -108,6 +92,13 @@ public class MainActivity1 extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        AFOT a = (AFOT)getApplicationContext();
+        a.saveData();
     }
 
     @Override
@@ -188,14 +179,28 @@ public class MainActivity1 extends AppCompatActivity {
         alert.setView(layout);
 
         final EditText edt_event = (EditText) layout.findViewById(R.id.edt_event);
+        final EditText edt_time_h = (EditText) layout.findViewById(R.id.edt_time_h);
+        final EditText edt_time_m = (EditText) layout.findViewById(R.id.edt_time_m);
         alert.setPositiveButton("确认", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
-                //What ever you want to do with the value
-                //Editable YouEditTextValue = edittext.getText();
-                //OR
-                String e = edt_event.getText().toString();
-                logUtils.logDebug("e: " + e);
-                dialog.dismiss();
+                ers = new HashMap<String, EventRecord>();
+                EventRecord er = new EventRecord();
+                AFOT a = (AFOT)getApplicationContext();
+                String event = edt_event.getText().toString();
+                String time_h = edt_time_h.getText().toString();
+                String time_m = edt_time_m.getText().toString();
+                if (event.length() > 0 && (time_h.length() > 0 || time_m.length() > 0)) {
+                    int timeh = 0, timem = 0;
+                    er.setEvent(event);
+                    er.setRecordTime(System.currentTimeMillis());
+                    if (time_h.length() > 0) { timeh = Integer.parseInt(time_h); }
+                    if (time_m.length() > 0) { timem = Integer.parseInt(time_m); }
+                    er.setConsumeTime(timeh * 60 + timem);
+                    ers.put(String.valueOf(a.lers.size()), er);
+                    a.lers.add(ers);
+                    a.saveData();
+                    dialog.dismiss();
+                }
             }
         });
 
